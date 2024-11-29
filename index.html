@@ -4,8 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stop-watch javascript assignment-02</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="stopwatch">
+        <h2>STOPWATCH</h2>
+        <h3>VANILLA JAVASCRIPT STOPWATCH</h3>
+        <div class="time-display" id="time-display">00:00:00</div>
+        <div class="controls">
+          <button id="start-btn">Start</button>
+          <button id="stop-btn">Stop</button>
+          <button id="lap-btn">Lap</button>
+          <button id="reset-btn">Reset</button>
+        </div>
+
+        <table id="lap-table">
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Lap - Time</th>
+              <th>Total - Time</th>
+            </tr>
+          </thead>
+          <tbody id="lap-body"></tbody>
+        </table>
+      </div>
+      <script src="main.js"></script>
 </body>
 </html>
