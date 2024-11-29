@@ -84,12 +84,37 @@ table , th ,tbody ,td{
   border: 1px solid white;
   border-collapse: collapse;
   text-align: center;
+
+  
+}
+
+th ,td{
   padding: 10px 0;
 }
 
 th{
   color: black;
 }
+
+
+
+#lap-table tbody {
+  display: block;
+  max-height: 200px; 
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+#lap-table thead, #lap-table tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#lap-table td, #lap-table th {
+  overflow: hidden;
+}
+
 
 /*responsive part*/
 
@@ -126,5 +151,13 @@ th{
 
   button {
     padding: 8px 20px;
+  }
+
+ 
+}
+
+@media (max-width: 320px){
+  th{
+    font-size: 10px;
   }
 }
